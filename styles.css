@@ -1,11 +1,11 @@
 body {
-    background: grey;
+    background: rgb(250, 237, 237);
     font-family:Arial, Helvetica, sans-serif;
 
 }
 .assignment{
     padding:10px;
-    background: lightblue;
+    background:lightseagreen;
     margin: 10px;
 
 }
@@ -17,4 +17,7 @@ body {
 h1{
     color: black;
     text-align: center;
+}
+a{
+    text-decoration: none;
 }
