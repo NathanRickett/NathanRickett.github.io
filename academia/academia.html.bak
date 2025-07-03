@@ -104,13 +104,15 @@
       </header>
       <!-- Highlights Section -->
       <section class="highlights">
-        <h2>Key Highlights</h2>
+        <h2>Highlights</h2>
         <ul>
-          <li><a href="file:///C:/Users/Natha/NathanRickett.github.io/academia/Capstone_final.pdf">Master's
-              Degree Practicum Report</a></li>
-          <li>EXAMPLE</li>
-          <li>EXAMPLE</li>
         </ul>
+        <a href="file:///C:/Users/Natha/NathanRickett.github.io/academia/Capstone_final.pdf">Master's
+          Degree Practicum Report</a><br>
+        <a href="file:///C:/Users/Natha/NathanRickett.github.io/academia/Lessons_Learned_Viasat_Hack.pdf"><br>
+          Lessons Learned From the 2022 Viasat Hack: Evolution of Cyber Warfare</a><br>
+        <br>
+        EXAMPLE
         <p><br>
         </p>
         <img style="width: 356px; height: 199px;" title="USF Logo" alt="USF Logo"
