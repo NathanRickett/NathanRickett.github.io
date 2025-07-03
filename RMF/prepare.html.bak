@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMF Prepare Phase – Home Lab</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #1a237e;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    details {
+      background: #f1f1f1;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border-radius: 4px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    a {
+      color: #1565c0;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="text-align: center;">RMF Step 1: Prepare</h1>
+      <h1><br>
+      </h1>
+      <h2>System Design</h2>
+      <p> Contractor-developed, unclassified web system that supports public
+        communication for the U.S. Air Force. This system is hosted and managed
+        by a defense contractor and must comply with federal cybersecurity
+        requirements (e.g., NIST RMF, NIST SP 800-53 Low/Moderate baseline).</p>
+    </header>
+    <section id="prepare-phase">
+      <h2>Prepare Phase Structure</h2>
+      <p> The Prepare step of the NIST Risk Management Framework sets
+        organizational context and lays the foundation for all subsequent RMF
+        activities. It is divided into two tiers of tasks: </p>
+      <ul>
+        <li>Organization-level tasks (P1–P7): establish governance, strategy,
+          and monitoring at enterprise scale.</li>
+        <li>System-level tasks (P8–P17): tailor controls and define scope for
+          the specific information system.</li>
+      </ul>
+      <p></p>
+    </section>
+    <section id="org-level-tasks">
+      <h2>Organization-Level Tasks</h2>
+      <details>
+        <summary>Task P1: Risk Management Roles</summary>
+        <p> Identify and assign individuals to specific roles associated with
+          security and privacy risk management. Define who serves as the
+          Authorizing Official (AO), Risk Executive, CISO, etc., across all
+          projects. </p>
+      </details>
+      <details>
+        <summary>Task P2: Risk Management Strategy</summary>
+        <p> Establish how the company handles risk—for example, “We accept low
+          risk, mitigate moderate, avoid high.” Document risk tolerance,
+          decision criteria, and approval processes. </p>
+      </details>
+      <details>
+        <summary>Task P3: Risk Assessment – Organization</summary>
+        <p> Evaluate threats to all company systems (e.g., insider threats,
+          supply chain risks). Determine assessment methodologies, frequency,
+          and reporting formats. </p>
+      </details>
+      <details>
+        <summary>Task P4: Tailored Control Baselines (Optional)</summary>
+        <p> Customize NIST SP 800-53 Low/Moderate baselines for all unclassified
+          DoD projects. Document justifications for additions, deletions, or
+          parameter changes. </p>
+      </details>
+      <details>
+        <summary>Task P5: Common Control Identification</summary>
+        <p> Define shared controls such as firewall rules (pfSense), centralized
+          logging (Wazuh), and patch management (WSUS). Map which systems
+          inherit these controls.</p>
+        <p><br>
+        </p>
+      </details>
+      <details>
+        <summary>Task P6: Impact-Level Prioritization</summary>
+        <p> If multiple systems are in development, prioritize based on mission
+          impact and sensitivity. Use impact ratings (Low/Moderate/High) to
+          sequence work and resource allocation. </p>
+      </details>
+      <details>
+        <summary>Task P7: Continuous Monitoring Strategy – Org</summary>
+        <p> Define how all systems will be monitored—e.g., Wazuh agents, weekly
+          vulnerability scans, monthly audits, and reporting cadence to risk
+          owners. </p>
+      </details>
+    </section>
+    <section id="system-level-tasks">
+      <h2>System-Level Tasks</h2>
+      <details>
+        <summary>Task P8: Mission/Business Focus</summary>
+        <p> The website supports public communication for an Air Force
+          initiative. Clarify mission owner objectives and performance metrics.
+        </p>
+      </details>
+      <details>
+        <summary>Task P9: Identify Stakeholders</summary>
+        <p> List system owner (contractor PM), end users (Air Force public
+          affairs), developers, and ISSO. Capture roles and points of contact. </p>
+      </details>
+      <details>
+        <summary>Task P10: Asset Identification</summary>
+        <p> Inventory assets: web server VM, pfSense firewall, Wazuh agent,
+          domain controller (if used for auth). </p>
+      </details>
+      <details>
+        <summary>Task P11: Authorization Boundary</summary>
+        <p> Define in-scope components: web server, firewall, logging
+          infrastructure. Exclude internal contractor networks and development
+          environments. </p>
+      </details>
+      <details>
+        <summary>Task P12: Information Types</summary>
+        <p> Catalog data types: publicly releasable content, contact-form
+          submissions (PII). Classify sensitivity. </p>
+      </details>
+      <details>
+        <summary>Task P13: Information Life Cycle</summary>
+        <p> Describe how content is created by Air Force staff, uploaded by
+          contractor, and maintained/publicly accessible over time. </p>
+      </details>
+      <details>
+        <summary>Task P14: System Risk Assessment</summary>
+        <p> Assess threats such as web defacement, denial-of-service attacks,
+          and misconfigured access controls. Rate risk likelihood and impact. </p>
+      </details>
+      <details>
+        <summary>Task P15: Requirements Definition</summary>
+        <p> Define security and privacy requirements: HTTPS enforcement, input
+          validation, audit logging, session management. </p>
+      </details>
+      <details>
+        <summary>Task P16: Architecture Alignment</summary>
+        <p> Ensure the system’s design aligns with the contractor’s enterprise
+          architecture and security stack, including network segmentation and
+          identity management. </p>
+      </details>
+      <details>
+        <summary>Task P17: System Registration</summary>
+        <p> Register the system in the contractor’s inventory or DoD registry as
+          required by policy and track approval status. </p>
+      </details>
+    </section>
+    <section id="references">
+      <h2>References &amp; Documentation</h2>
+      <ul>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final">NIST
+            SP 800-37 Rev.2</a> – Guide for Applying RMF</li>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final">NIST
+            SP 800-53 Rev.5</a> – Security and Privacy Controls</li>
+        <li>Contractor’s internal Risk Management Plan and System Security Plan
+          (SSP)</li>
+      </ul>
+    </section>
+  </body>
+</html>
