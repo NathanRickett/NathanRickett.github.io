@@ -1,0 +1,29 @@
+
+<head>
+    <div class="container">
+        <header>
+            "Risk Management Framework"
+        </header>
+    </div>
+/</head>
+
+<div class="tab-container">
+  <button onclick="loadPage('prepare.html')">Step 1</button>
+  <button onclick="loadPage('categorize.html')">Step 2</button>
+  <button onclick="loadPage('select.html')">Step 3</button>
+  <button onclick="loadPage('implement.html')">Step 4</button>
+  <button onclick="loadPage('assess.html')">Step 5</button>
+  <button onclick="loadPage('authorize.html')">Step 6</button>
+  <button onclick="loadPage('monitor.html')">Step 7</button>
+  <!-- Repeat for all 7 tabs -->
+</div>
+
+<iframe id="content-frame" src="prepare.html"></iframe>
+<link rel="stylesheet" href="styles.css">
+
+
+<script>
+  function loadPage(page) {
+    document.getElementById('content-frame').src = page;
+  }
+</script>

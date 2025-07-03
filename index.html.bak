@@ -112,11 +112,8 @@
       <section class="accomplishments">
         <h2>Key Accomplishments</h2>
         <ul>
-          <li>Designed and deployed a multi-VLAN home lab using VMware and
-            pfSense</li>
-          <li>Integrated Wazuh for SIEM monitoring and alerting</li>
-          <li>Published tutorials on RMF, NIST SP 800-37, and STIG hardening</li>
-          <li>Contributed to open-source security tooling on GitHub</li>
+          <br>
+          <br>
         </ul>
       </section>
       <section class="projects">
