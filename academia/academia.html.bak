@@ -109,15 +109,16 @@
         </ul>
         <a target="_blank" href="Capstone_final.pdf">Master's Degree Practicum
           Report</a><br>
-        <a href="Lessons_Learned_Viasat_Hack.pdf"><br>
+        <a target="_blank" href="Lessons_Learned_Viasat_Hack.pdf"><br>
           Lessons Learned From the 2022 Viasat Hack: Evolution of Cyber Warfare</a><br>
         <br>
-        <a href="BCDR%20Analysis.pdf">BCDR Analysis of an Enterprise Data Center</a><br>
+        <a target="_blank" href="BCDR%20Analysis.pdf">BCDR Analysis of an
+          Enterprise Data Center</a><br>
         <br>
-        <a href="Project%20Management%20-%20Stakeholder%20Analysis.pdf">Project
+        <a target="_blank" href="Project%20Management%20-%20Stakeholder%20Analysis.pdf">Project
           Management - Stakeholder Identification</a><br>
         <br>
-        <a href="Project%20Management%20-%20Risk%20Management.pdf">Project
+        <a target="_blank" href="Project%20Management%20-%20Risk%20Management.pdf">Project
           Management - Risk Management</a><br>
         <p><br>
         </p>
@@ -130,7 +131,7 @@
       </section>
       <!-- Master’s Degree Dropdown -->
       <section>
-        <details>
+        <details open="">
           <summary>Key Courses</summary>
           <p><strong>Seminar on Software Testing</strong></p>
           <p><strong>Advanced Systems Analysis and Design</strong></p>
@@ -149,7 +150,7 @@
         Bachelor of Science in Computer Science<br>
       </b>&nbsp;<!-- Bachelor’s Degree Dropdown -->
       <section>
-        <details>
+        <details open="">
           <summary>Key Courses</summary>
           <p><strong>Algorithmic Design 1 &amp; 2<br>
             </strong></p>
