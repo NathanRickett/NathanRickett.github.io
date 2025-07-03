@@ -4,47 +4,91 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMF Prepare Phase – Home Lab</title>
-    <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      line-height: 1.5;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #1a237e;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    details {
-      background: #f1f1f1;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border-radius: 4px;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-    a {
-      color: #1565c0;
-    }
-  </style>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 2rem;
+          line-height: 1.5;
+          color: #333;
+        }
+        h1, h2, h3 {
+          color: #063146;
+        }
+        section {
+          margin-bottom: 2rem;
+        }
+        details {
+          background: #f1f1f1;
+          padding: 0.75rem;
+          margin: 0.5rem 0;
+          border-radius: 4px;
+        }
+        summary {
+          font-weight: bold;
+          cursor: pointer;
+        }
+        a {
+          color: #063146;
+        }
+
+        .button {
+          
+          display: inline-block;
+          margin: 10px;
+          padding: 12px 20px;
+          background-color: #0078d4;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: center; /* horizontal centering */
+          align-items: center;     /* vertical centering (optional) */
+          height: 100px;           /* optional, for vertical centering */
+        }
+
+
+        .button:hover {
+          background-color: #005fa3;
+        }
+    </style>
   </head>
+
   <body>
     <header>
       <h1 style="text-align: center;">RMF Step 1: Prepare</h1>
-      <h1><br>
-      </h1>
+
+      <h1><br></h1>
+
+      <section id="description">
+      <h2>Description</h2>
+      <p> So, you or your organization have an idea for a new system or group of systems that you’d like to get up and running... 
+        exciting! I’m sure many bright techs and engineers are eager to do what they do best and start the process of 
+        implementing it, but there’s a few preparations that must be made before you’re ready to start building. Risks exist at 
+        every element of a system and establishing a strong foundation before implementation results in reduced costs and 
+        complexity, informed risk-based decision making, a clear governance structure, and a smoother integration.   </p>
+      <p></p>
+    </section>
+
+    <section class="links" id="system-design">
       <h2>System Design</h2>
       <p> Contractor-developed, unclassified web system that supports public
         communication for the U.S. Air Force. This system is hosted and managed
         by a defense contractor and must comply with federal cybersecurity
-        requirements (e.g., NIST RMF, NIST SP 800-53 Low/Moderate baseline).</p>
-    </header>
-    <section id="prepare-phase">
-      <h2>Prepare Phase Structure</h2>
+        requirements (e.g., NIST RMF, NIST SP 800-53 Low/Moderate baseline).
+      </p>
+      <a href="#" class="button">View Network Architecture</a>
+      <a href="#" class="button">Home Lab Setup Guide</a>
+    </section>
+    
+
+    <section id="prepare-phase-structure">
+      <h1>Prepare Phase Structure</h1>
       <p> The Prepare step of the NIST Risk Management Framework sets
         organizational context and lays the foundation for all subsequent RMF
         activities. It is divided into two tiers of tasks: </p>
@@ -56,6 +100,7 @@
       </ul>
       <p></p>
     </section>
+
     <section id="org-level-tasks">
       <h2>Organization-Level Tasks</h2>
       <details>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <header>Navigation</header>
+        <ul>
+          <li><a href="#" onclick="loadPage('home.html')">Home</a></li>
+          <li><a href="#" onclick="loadPage('introduction/intro.html')">Intro</a></li>
+          <li><a href="#" onclick="loadPage('fisma/fisma.html')">FISMA</a></li>
+          <li><a href="#" onclick="loadPage('prepare/prepare.html')">Prepare</a></li>
+          <li><a href="#" onclick="loadPage('categorize/categorize.html')">Categorize</a></li>
+          <li><a href="#" onclick="loadPage('select/select.html')">Select</a></li>
+          <li><a href="#" onclick="loadPage('implement/implement.html')">Implement</a></li>
+          <li><a href="#" onclick="loadPage('assess/assess.html')">Assess</a></li>
+          <li><a href="#" onclick="loadPage('authorize/authorize.html')">Authorize</a></li>
+          <li><a href="#" onclick="loadPage('monitor/monitor.html')">Monitor</a></li>
+        </ul>
+    </div>
+
+    <iframe id="content-frame" src="home.html"></iframe>
+    <link rel="stylesheet" href="styles.css">
+
+  <script>
+    function loadPage(page) {
+      document.getElementById('content-frame').src = page;
+    }
+  </script></body>
+
+</html>
