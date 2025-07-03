@@ -107,12 +107,11 @@
         <h2>Highlights</h2>
         <ul>
         </ul>
-        <a href="file:///C:/Users/Natha/NathanRickett.github.io/academia/Capstone_final.pdf">Master's
-          Degree Practicum Report</a><br>
-        <a href="file:///C:/Users/Natha/NathanRickett.github.io/academia/Lessons_Learned_Viasat_Hack.pdf"><br>
+        <a href="Capstone_final.pdf">Master's Degree Practicum Report</a><br>
+        <a href="Lessons_Learned_Viasat_Hack.pdf"><br>
           Lessons Learned From the 2022 Viasat Hack: Evolution of Cyber Warfare</a><br>
         <br>
-        EXAMPLE
+        <a href="BCDR%20Analysis.pdf">BCDR Analysis of an Enterprise Data Center</a><br>
         <p><br>
         </p>
         <img style="width: 356px; height: 199px;" title="USF Logo" alt="USF Logo"
@@ -130,7 +129,9 @@
           <p><strong>Advanced Systems Analysis and Design</strong></p>
           <p><strong>Applied Cryptography</strong></p>
           <p><strong>Data Network, Systems, and Security</strong></p>
-          <p><strong>Decision Processes for Business Continuity and Disaster</strong></p>
+          <p><strong>Decision Processes for Business Continuity and Disaster
+              Recovery<br>
+            </strong></p>
           <p><strong>Information Security &amp; Risk Management</strong></p>
           <p><strong>Risk Management and Legal Compliance</strong></p>
           <p><strong>Accounting Systems Audit, Control, and Security</strong></p>
@@ -143,15 +144,34 @@
       <section>
         <details>
           <summary>Key Courses</summary>
-          <p><strong>Seminar on Software Testing</strong></p>
-          <p><strong>Advanced Systems Analysis and Design</strong></p>
-          <p><strong>Applied Cryptography</strong></p>
-          <p><strong>Data Network, Systems, and Security</strong></p>
-          <p><strong>Decision Processes for Business Continuity and Disaster</strong></p>
-          <p><strong>Information Security &amp; Risk Management</strong></p>
-          <p><strong>Risk Management and Legal Compliance</strong></p>
-          <p><strong>Accounting Systems Audit, Control, and Security</strong></p>
-          <p><strong>Information Assurance Practicum</strong></p>
+          <p><strong>Algorithmic Design 1 &amp; 2<br>
+            </strong></p>
+          <p><strong>Digital Logic Design<br>
+            </strong></p>
+          <p><strong>Intro to Computer Architecture<br>
+            </strong></p>
+          <p><strong>Unix/Linux Fundamentals<br>
+            </strong></p>
+          <p><strong>Information Security Principles<br>
+            </strong></p>
+          <p><strong>Software Engineering<br>
+            </strong></p>
+          <p><strong>Business Writing<br>
+            </strong></p>
+          <p><strong>Discrete Mathematics<br>
+            </strong></p>
+          <p><strong>Advanced Programming Techniques</strong></p>
+          <p><strong>Intro to Computer Networks</strong></p>
+          <p><strong>Programming Language Structures</strong></p>
+          <p><strong>Data Structures &amp; Algorithms</strong></p>
+          <p><strong>Computer Crime &amp; Forensics</strong></p>
+          <p><strong>Operating Systems</strong></p>
+          <p><strong>Artificial Intelligence</strong></p>
+          <p><strong>Building Secure Software</strong></p>
+          <p><strong>Foundations of Computation</strong></p>
+          <p><strong>Cloud Computing</strong></p>
+          <p><strong>Computer Science Capstone<br>
+            </strong></p>
         </details>
       </section>
       <footer> © 2025 Your Name • <a href="https://linkedin.com/in/yourprofile"

@@ -88,7 +88,7 @@
         <b><strong>THIS IS A PROTOTYPE</strong><br>
         </b><br>
         <br>
-        <img style="width: 199px; height: 199px;" src="grad_photo.jfif" alt="Nathan Rickett">
+        <img style="width: 302px; height: 302px;" src="grad_photo.jfif" alt="Nathan Rickett">
         <h1>Nathan Rickett</h1>
         <p>Cybersecurity Enthusiast</p>
       </header>
@@ -108,10 +108,6 @@
           hold an active certification in CompTIA Security+ 501, which
           underscores my commitment to safeguarding sensitive information and
           managing risk effectively. </p>
-        <p><br>
-        </p>
-        <p><a href="https://NathanRickett.github.io/academia/Lessons_Learned_Viasat_Hack.pdf"><span
-              style="color: #0073b1;">Academic Work</span></a></p>
       </section>
       <section class="accomplishments">
         <h2>Key Accomplishments</h2>
@@ -124,13 +120,16 @@
         </ul>
       </section>
       <section class="projects">
-        <h2>Blogs &amp; Projects</h2>
+        <h2>Links</h2>
         <ul>
-          <li><a href="https://yourusername.github.io/rmf-prepare" target="_blank">RMF
+          <li>Academics</li>
+          <li><a href="https://NathanRickett.github.io/rmf" target="_blank">RMF
               Deep Dive</a></li>
           <li><a href="https://medium.com/@yourusername/security-case-studies" target="_blank">Security
               Case Studies</a></li>
           <li><span style="color: #0073b1;">Threat Intelligence Tool</span></li>
+        </ul>
+        <ul>
         </ul>
       </section>
       <footer> © 2025 Your Name • <a href="https://linkedin.com/in/nathan-rickett-9aa015183"
