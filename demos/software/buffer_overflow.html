@@ -1,0 +1,88 @@
+<!-- software/buffer_overflow.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buffer Overflow Attack</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    /* override default matrix-green and make things pop */
+    body {
+      color: #93efcc; /* lighter neon green */
+    }
+    h1 {
+      color: #93efcc; /* medium spring green */
+    }
+    .intro {
+      color: #93efcc; /* lawn green */
+    }
+    h2 {
+      color: #93efcc; /* chartreuse */
+    }
+    pre, code {
+      color: #93efcc; /* green yellow */
+    }
+    ol li, ul li {
+      color: #93efcc; /* softer highlight */
+    }
+    .note {
+      color: #93efcc; /* distinct note color */
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>🖥️ Buffer Overflow Attack</h1>
+
+  <p class="intro">
+    A buffer overflow occurs when a program writes more data into a fixed-size buffer than it can hold,  
+    overwriting adjacent memory and potentially hijacking execution.
+  </p>
+
+  <h2>1. How Memory Is Laid Out (Stack)</h2>
+  <pre>
+┌───────────────────────────────┐
+│  Return Address (EIP)         │ ← overwritten!
+├───────────────────────────────┤
+│  Saved Frame Pointer (EBP)    │
+├───────────────────────────────┤
+│  buffer[10]                   │ ← only 10 bytes allocated
+├───────────────────────────────┤
+│  Other Local Variables        │
+└───────────────────────────────┘
+  </pre>
+
+  <h2>2. Vulnerable C Example</h2>
+  <pre><code>void vulnerable() {
+    char buffer[10];
+    gets(buffer);   // no bounds checking
+}
+
+int main() {
+    vulnerable();
+    return 0;
+}</code></pre>
+
+  <h2>3. Attack Steps</h2>
+  <ol>
+    <li>Attacker crafts input &gt; 10 bytes (e.g., 200 bytes).</li>
+    <li>Excess data overwrites the saved EIP (return address).</li>
+    <li>Attacker points EIP at injected shellcode in the buffer.</li>
+    <li>On return, execution jumps to the shellcode.</li>
+  </ol>
+
+  <h2>4. Common Mitigations</h2>
+  <ul>
+    <li>Stack Canaries (detect overwrites)</li>
+    <li>Non-Executable Stack (NX bit)</li>
+    <li>Address Space Layout Randomization (ASLR)</li>
+    <li>Bounds-checking functions (strncpy, fgets)</li>
+  </ul>
+
+  <p class="note">
+    Note: Modern compilers and OSes include many of these defenses by default—  
+    understanding them helps you recognize and test for vulnerabilities.
+  </p>
+</body>
+</html>

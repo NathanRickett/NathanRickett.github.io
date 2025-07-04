@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attack Vector Demos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav id="sidebar" class="sidebar">
+      <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+      <div class="nav-content">
+        <label for="category">🗂️ Select Category:</label>
+        <select id="category" onchange="updateDemoList()">
+          <option value="">-- Choose a category --</option>
+          <option value="web">🌐 Web Attacks</option>
+          <option value="social">🎭 Social Engineering</option>
+          <option value="network">🔌 Network Exploits</option>
+          <option value="software">💻 Software Exploits</option>
+        </select>
+        <ul id="demo-list" class="demo-list"></ul>
+      </div>
+    </nav>
+
+    <main class="content">
+      <iframe id="demo-frame" src="" frameborder="0"></iframe>
+      <footer>
+        <p>Built by Nathan | 2025</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    const demos = {
+      web: [
+        { name: "SQL Injection", file: "web/sql_injection.html" },
+        { name: "Cross-Site Scripting (XSS)", file: "web/xss.html" },
+      ],
+      social: [
+        { name: "Phishing Simulation", file: "social/phishing.html" }
+      ],
+      network: [
+        { name: "Man-in-the-Middle", file: "network/mitm.html" }
+      ],
+      software: [
+        { name: "Buffer Overflow", file: "software/buffer_overflow.html" }
+      ]
+    };
+
+    function updateDemoList() {
+      const cat = document.getElementById("category").value;
+      const list = document.getElementById("demo-list");
+      list.innerHTML = "";
+      if (demos[cat]) {
+        demos[cat].forEach(d => {
+          const li = document.createElement("li");
+          const btn = document.createElement("button");
+          btn.textContent = `> ${d.name}`;
+          btn.onclick = () => loadDemo(d.file);
+          li.appendChild(btn);
+          list.appendChild(li);
+        });
+      }
+    }
+
+    function loadDemo(file) {
+      document.getElementById("demo-frame").src = file;
+    }
+
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    }
+
+    function loadDemo(file) {
+      document.getElementById("demo-frame").src = file;
+      // collapse the sidebar right after loading
+      toggleSidebar();
+    }
+
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    }
+
+    // after your existing functions…
+      document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('demo-frame').src = 'default.html';
+      });
+
+
+  </script>
+</body>
+</html>

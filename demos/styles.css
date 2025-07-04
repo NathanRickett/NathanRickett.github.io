@@ -1,0 +1,103 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  background: #000; color: #00ff88;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.container {
+  display: flex; height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px; background: #0a0a0a;
+  border-right: 1px solid #00ff88;
+  display: flex; flex-direction: column;
+  transition: width 0.3s ease;
+}
+.sidebar.collapsed {
+  width: 50px;
+}
+.toggle-btn {
+  background: none; border: none;
+  color: #00ff88; font-size: 1.5rem;
+  padding: 10px; cursor: pointer;
+  text-align: left;
+}
+.nav-content {
+  padding: 20px; overflow-y: auto;
+}
+.sidebar.collapsed .nav-content {
+  display: none;
+}
+
+/* Form & list inside nav */
+.nav-content label {
+  display: block; margin-bottom: 8px; color: #00ffaa;
+}
+.nav-content select {
+  width: 100%; padding: 8px;
+  background: #000; color: #00ff88;
+  border: 1px solid #00ff88; border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #00ff88;
+}
+.nav-content select:focus {
+  outline: none; border-color: #00ffaa;
+  box-shadow: 0 0 10px #00ffaa;
+}
+
+.icon {
+  display: block;        /* remove inline gaps */
+  max-width: 100%;       /* never exceed its container’s width */
+  height: auto;          /* adjust height to keep aspect ratio */
+}
+
+.demo-list {
+  list-style: none; padding: 0; margin: 0;
+}
+.demo-list li {
+  margin: 8px 0;
+}
+.demo-list button {
+  background: none; border: none;
+  color: #00ff88; cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.demo-list button:hover {
+  color: #00ffaa; transform: translateX(5px);
+}
+
+/* Main content + iframe */
+.content {
+  flex: 1; display: flex; flex-direction: column;
+}
+
+
+/* remove all padding around iframe container */
+.iframe-container {
+  flex: 1;
+  display: flex;
+  padding: 0;        /* was 0 20px 20px */
+}
+
+/* make iframe edge-to-edge */
+iframe {
+  flex: 1;           /* already present */
+  width: 100%;       /* fill the width */
+  margin: 0;         /* remove any default margin */
+  border: 1px solid #00ff88;
+  border-radius: 4px;
+  background: #000;
+  box-shadow: 0 0 10px rgba(0,255,136,0.2);
+}
+
+/* Footer at bottom of content */
+footer {
+  text-align: center; padding: 5px 0;
+  background: #0a0a0a; border-top: 1px solid #00ff88;
+  color: #33ff99; font-size: 0.9rem;
+}

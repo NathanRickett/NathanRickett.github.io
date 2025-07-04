@@ -1,0 +1,65 @@
+<!-- default.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to the Cyber Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* full‐screen, centered layout */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      color: #2fbfdc;
+      font-family: 'Share Tech Mono', monospace;
+    }
+
+    /* mask image styling */
+    .mask {
+      max-width: 180px;
+      width: 25%;
+      opacity: 0.85;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 0 5px #00ff88);
+    }
+
+    /* quote styling */
+    blockquote {
+      margin: 0;
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      line-height: 1.4;
+      text-align: center;
+      color: #2fbfdc;
+      border-left: 3px solid #2fbfdc;
+    }
+
+    cite {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #2fbfdc;
+    }
+  </style>
+</head>
+
+<body>
+  <img
+    class="icon"
+    src="adversary.png"
+    alt="threat-actor"
+  />
+
+  <blockquote>
+    “If you know the enemy and know yourself, you need not fear the result of a hundred battles.”
+    <cite>— Sun Tzu, The Art of War</cite>
+  </blockquote>
+</body>
+</html>
